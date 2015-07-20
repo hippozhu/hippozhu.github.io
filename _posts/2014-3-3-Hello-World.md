@@ -2,11 +2,18 @@
 layout: post
 title: Some Notes
 ---
-```python
-def two_three_strings(x):
-  return x*2, x*3
 
-df4['twice'],df4['thrice'] = zip(*df4['int_col'].map(two_three_strings))
+From:
+http://manishamde.github.io/blog/2013/03/07/pandas-and-python-top-10/
+
+```python
+In [43]: df4 = df.copy()
+
+In [44]: def two_three_strings(x):
+   ....:   return x*2, x*3
+   ....:
+
+In [45]: df4['twice'],df4['thrice'] = zip(*df4['int_col'].map(two_three_strings))
 
 In [46]: df4
 Out[46]:
@@ -16,4 +23,5 @@ Out[46]:
 2        0.2        6    None     12      18
 3       10.1        8       c     16      24
 4        NaN       -1       a     -2      -3
+
 ```
