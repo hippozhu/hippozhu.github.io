@@ -5,7 +5,7 @@ title: Some Notes
 ### Generate new column(s) from existing column(s)
 [***Source](http://manishamde.github.io/blog/2013/03/07/pandas-and-python-top-10/)
 
-#### multiple columns from a single column
+#### 1. Multiple columns from a single column
 ```python
 In [43]: df4 = df.copy()
 
@@ -25,7 +25,7 @@ Out[46]:
 4        NaN       -1       a     -2      -3
 ```
 
-#### single column from multiple columns
+#### Single column from multiple columns
 ```python
 In [48]: def sum_two_cols(series):
    ....:   return series['int_col'] + series['float_col']
