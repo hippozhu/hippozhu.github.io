@@ -25,7 +25,7 @@ Out[46]:
 4        NaN       -1       a     -2      -3
 ```
 
-2. #### Single column from multiple columns
+#### 2. Single column from multiple columns
 ```python
 In [48]: def sum_two_cols(series):
    ....:   return series['int_col'] + series['float_col']
@@ -43,7 +43,7 @@ Out[50]:
 4        NaN       -1       a      NaN
 ```
 
-#### Multiple columns from multiple columns
+#### 3. Multiple columns from multiple columns
 ```python
 In [51]: import math
 
