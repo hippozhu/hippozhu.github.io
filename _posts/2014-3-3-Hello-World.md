@@ -3,7 +3,7 @@ layout: post
 title: Some Notes
 ---
 
-[Source](http://manishamde.github.io/blog/2013/03/07/pandas-and-python-top-10/)
+[***Source](http://manishamde.github.io/blog/2013/03/07/pandas-and-python-top-10/)
 #### multiple columns as a function of a single column
 ```python
 In [43]: df4 = df.copy()
