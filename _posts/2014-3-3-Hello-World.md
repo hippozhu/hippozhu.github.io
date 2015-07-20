@@ -1,10 +1,19 @@
 ---
 layout: post
-title: You're up and running!
+title: Some Notes
 ---
+```python
+def two_three_strings(x):
+  return x*2, x*3
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+df4['twice'],df4['thrice'] = zip(*df4['int_col'].map(two_three_strings))
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
-
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+In [46]: df4
+Out[46]:
+   float_col  int_col str_col  twice  thrice
+0        0.1        1       a      2       3
+1        0.2        2       b      4       6
+2        0.2        6    None     12      18
+3       10.1        8       c     16      24
+4        NaN       -1       a     -2      -3
+```
